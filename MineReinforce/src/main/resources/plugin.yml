@@ -1,0 +1,9 @@
+name: MineReinforce
+version: '${project.version}'
+main: com.mathrabbit.minereinforce.MineReinforce
+api-version: 1.18
+authors: [ math_rabbit_1028 ]
+description: Reinforce System in Minecraft Minigame
+commands:
+  magic:
+    discription: to get magic paper
