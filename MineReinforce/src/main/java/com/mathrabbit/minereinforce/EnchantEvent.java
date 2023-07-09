@@ -339,7 +339,7 @@ public class EnchantEvent implements Listener {
 
                         if (event.getClickedInventory().getItem(19).getType() == Material.GREEN_STAINED_GLASS_PANE) {
                             ItemStack result_item = make_enchant(clear_enchant(event.getClickedInventory().getItem(40)),
-                                    Math.max(1, Math.min(5, (int)random.nextGaussian(3, 1))));
+                                    Math.max(1, Math.min(5, (int)random.nextGaussian()+3)));
                             int level = AnvilEvent.get_reinforce_level(result_item);
                             int val = AnvilEvent.get_enchant_value(result_item);
                             if (val < 2 * level)
@@ -353,7 +353,7 @@ public class EnchantEvent implements Listener {
                         }
                         if (event.getClickedInventory().getItem(21).getType() == Material.GREEN_STAINED_GLASS_PANE) {
                             ItemStack result_item = make_enchant(clear_enchant(event.getClickedInventory().getItem(40)),
-                                    Math.max(1, Math.min(11, (int)random.nextGaussian(6, 2))));
+                                    Math.max(1, Math.min(11, (int)random.nextGaussian()*2+6)));
                             int level = AnvilEvent.get_reinforce_level(result_item);
                             int val = AnvilEvent.get_enchant_value(result_item);
                             if (val < 2 * level)
@@ -367,7 +367,7 @@ public class EnchantEvent implements Listener {
                         }
                         if (event.getClickedInventory().getItem(23).getType() == Material.GREEN_STAINED_GLASS_PANE) {
                             ItemStack result_item = make_enchant(clear_enchant(event.getClickedInventory().getItem(40)),
-                                    Math.max(1, Math.min(17, (int)random.nextGaussian(9, 3))));
+                                    Math.max(1, Math.min(17, (int)random.nextGaussian()*3+9)));
                             int level = AnvilEvent.get_reinforce_level(result_item);
                             int val = AnvilEvent.get_enchant_value(result_item);
                             if (val < 2 * level)
@@ -381,7 +381,7 @@ public class EnchantEvent implements Listener {
                         }
                         if (event.getClickedInventory().getItem(25).getType() == Material.GREEN_STAINED_GLASS_PANE) {
                             ItemStack result_item = make_enchant(clear_enchant(event.getClickedInventory().getItem(40)),
-                                    Math.max(1, Math.min(23, (int)random.nextGaussian(12, 4))));
+                                    Math.max(1, Math.min(23, (int)random.nextGaussian()*4+12)));
                             int level = AnvilEvent.get_reinforce_level(result_item);
                             int val = AnvilEvent.get_enchant_value(result_item);
                             if (val < 2 * level)

@@ -39,7 +39,7 @@ public class AnvilEvent implements Listener {
                     "필요 주문서: " + Integer.toString(level + 1) + "개",
                     "강화 확률: " + Integer.toString(100 - level * 10) + "%",
                     "실패 확률: " + Integer.toString(level * (10 - level)) + "%",
-                    "하락 확률: " + Integer.toString(0) + "%",
+                    //"하락 확률: " + Integer.toString(0) + "%",
                     "파괴 확률: " + Integer.toString(level * level) + "%"));
         }
         item.setItemMeta(item_meta);
@@ -372,7 +372,6 @@ public class AnvilEvent implements Listener {
                                 if (level == 10) AnvilGUI.item_set(BLUE_STAINED_GLASS_PANE, "FULL REINFORCE", 1,
                                         Arrays.asList(), 31, event.getClickedInventory());
 
-                                player.sendMessage(Integer.toString(get_enchant_value(result_item)));
                             }
                         }
                     }
